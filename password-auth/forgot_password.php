@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../db_config.php';
-require 'vendor/autoload.php'; // Ensure PHPMailer is installed
+require 'vendor/autoload.php'; 
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -291,4 +291,5 @@ label[for="show_password"] {
 
     </body>
     </html>
+
 
