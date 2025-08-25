@@ -1,0 +1,561 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: #F7F7F7;
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* General Table Styling */
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 450px;
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: auto; /* For Internet Explorer and Edge */
+}
+
+
+.table-container::-webkit-scrollbar {
+    display: 8px; /* For Chrome, Safari, and Opera */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin:0;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: none;
+}
+
+td {
+    font-size: 13px;
+}
+
+th {
+    background-color: #2C3E50;
+    color: white;
+    font-size: 13px;
+}
+
+/* Row Alternating Colors */
+tr.even {
+    background-color: #f9f9f9;
+}
+
+tr.odd {
+    background-color: #ffffff;
+    color: #3EB489;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for the search form */
+form {
+    margin: 5%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #1abc9c;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+form button:hover {
+    background-color: #15967c;
+}
+
+form button:active {
+    background-color: #15967c;
+}
+
+
+
+/* Edit button specific styling */
+.edit-btn {
+    background-color: #2e67e2; /* Green */
+    color: white;
+    border-radius: 5px;
+}
+
+.add-bttn{
+    background-color: #2e67e2;
+}
+
+.add-bttn:hover{
+    background-color: #2d58b4;
+}
+
+.edit-btn:hover {
+    background-color: #1abc9c; /* Darker green */
+}
+
+/* Delete button specific styling */
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+
+/* Style checkboxes inside the dropdown */
+.dropdownn-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.column-selection {
+    width: 100%;
+    margin-left: 1.5%;
+}
+
+
+label {
+    display: flex;
+    align-items: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: auto;
+}
+
+/* General button styling */
+button {
+    border: none;
+    padding: 10px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+
+
+.parent {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr) 1.1fr; /* Adjust last two for more gap */
+    grid-template-rows: repeat(1, 2fr);
+    column-gap: 15px; /* Increases the gap globally */
+}
+   
+
+.div1 h3, .div2 h3, .div3 h3, .div4 h3, .div5 h3, .div6 h3, .div7 h3{
+    padding: 5px;
+}
+
+.div1 label,.div2 label, .div3 label, .div4 label, .div5 label, .div6 label, .div7 label{
+    display: block;
+    padding: 0;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+/* Style the form button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+.parent- {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0%;
+}
+
+.count {
+    color: #2d58b4; /* Change this to your preferred color */
+    font-weight: bold; /* Optional: Makes the number stand out */
+}
+
+.div-1, .div-2, .div-3, .div-4, .div-5, .div-6, .div-7, .div-8, .div-9, .div-10, .div-11, .div-12, .div-13, .div-14, .div-15, .div-16, .div-17{
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.div-1:hover, .div-2:hover, .div-3:hover, .div-4:hover, .div-5:hover, 
+.div-6:hover, .div-7:hover, .div-8:hover, .div-9:hover, .div-10:hover, 
+.div-11:hover, .div-12:hover, .div-13:hover, .div-14:hover, .div-15:hover, 
+.div-16:hover, .div-17:hover, .div-18:hover, .div-19:hover {
+    background-color: #A0DCC3; /* Change to your preferred hover color */
+    transform: scale(1.02); /* Slightly enlarge the div */
+}
+ 
+.div-18{
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.div-19{
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.parent-total {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
+    
+/* Styles for the alert box */
+.alert-box {
+    display: none; 
+    width: auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+        
+
+.division-counts h3, .content h1{
+    margin: 3%;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.division-counts h4{
+    padding: 3%;
+    padding-left: 0;
+    padding-bottom: 0;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+.button-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers the button */
+    display: flex;
+    grid-column: span 6; /* Ensures the button takes up the full width of the grid */
+}
+.toggle-btn {
+    padding: 10px;
+    background-color: #2d58b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.toggle-btn:hover {
+    background-color: #3860b6;
+}
+
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+
+ /* Sidebar Styles */
+ .sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: -5%;
+    color: #F7F7F7;
+    margin-top: 5px;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #F7F7F7;
+}
+
+.sidebar button {
+    width: 90%;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.sidebar button:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Sidebar Styles */
+ .sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: -5%;
+    color: #F7F7F7;
+    margin-top: 5px;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10%;
+    color: #F7F7F7;
+}
+
+.sidebar button {
+    width: 90%;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.sidebar button:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 120px;
+    right: 10px;
+    top: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Main Content Area */
+.content {
+    margin-left: 200px; /* Adjusted to avoid overlap with sidebar */
+    padding: 20px;
+}
+
+/* Sidebar Navigation */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #2C3E50; /* Dark blue-gray */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.super-text{
+    color: white;
+}
+
+/* Adjust main content */
+.main-content {
+    margin-left: 270px; /* Matches navbar width + some padding */
+    padding: 20px;
+}
+
+/* Center the filter form */
+#filterForm {
+    position: absolute;
+    right: 0px;
+    top: 95px;
+}
+
+/* Style the select dropdown */
+#filterForm select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #2e67e2;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#filterForm select:hover {
+    border-color: #2e67e2;
+}
+
+/* When dropdown is clicked */
+#filterForm select:focus {
+    border-color: #2e67e2;
+    background-color: #fff;
+}
+
+/* Optional: Style the form container */
+#filterForm label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-left: 1%;
+}
+
+select:hover {
+    border-color: #0056b3;
+}
+
+select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+option {
+    background-color: white;
+    color: #333;
+}
+
+a {
+    display: inline-block; /* Ensures the entire button is clickable */
+    text-decoration: none; /* Optional: Removes underlines */
+}
