@@ -1,0 +1,4 @@
+$servername = "localhost";
+$username = "dreamteam_bvt";
+$password = "ofc{ufPE6=c.";
+$dbname = "dreamteam_bvt";

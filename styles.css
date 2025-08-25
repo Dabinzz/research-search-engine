@@ -1,0 +1,620 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F7F7F7;
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner Styles */
+.banner {
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    text-align: center;
+    background-color: #36454F;
+}
+
+.banner-text {
+    font-size: 5.5em;
+    color: #ffffff;
+    margin: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.highlight-berf {
+            color: #3EB489; /* Teal color for BERF */
+        }
+
+.clickable-berf{
+    text-decoration: none;
+}
+
+/* Search Box Styles */
+.search {
+    position: relative;
+    padding: 5px;
+    align-items: center;
+    margin: 5%;
+}
+
+.search input[type="text"] {
+    width: 50%;
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.search button {
+    background-color: #3EB489;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: .4s ease;
+    margin-left: 10px;
+}
+
+.search button:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    background-color: #03da8b;
+}
+
+
+
+
+.custom-shape-divider-top-1740728296 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1740728296 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-top-1740728296 .shape-fill {
+    fill: #36454F;
+}
+
+
+.output {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 2%;
+}
+
+/* Make sure all elements are using border-box for consistent sizing */
+* { box-sizing: border-box; }
+
+/* Style the tab */
+.tab {
+    border: none;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+}
+
+.firsttab {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+    grid-template-columns: 2fr 2fr 2fr; 
+    grid-template-rows: auto; 
+    gap: 20px;
+}
+
+.g{
+    color:#3EB489;
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Styling for the headings and ans */
+.headings {
+    padding: 10px;
+    background-color: #80808010;
+}
+
+.ans {
+    padding: 5px;
+    font-size: 16px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.about{
+    position: relative;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.status{
+    color: #3EB489;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  border-right: 5px solid #3EB489;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  margin: 6%;
+  border: none;
+  width: 50%;
+  height: 300px;
+}
+
+.tablinks{
+    border-radius: 0;
+}
+
+.fa-solid.fa-magnifying-glass {
+    font-size: 1rem; 
+}
+
+.fa-house, .fa-circle-user, .fa-book{
+    margin-right: 10px;
+    color: #3EB489;
+}
+
+.head-txt{
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.abs{
+    text-align: justify;
+    padding: 3%;
+    height: 320px;
+    overflow: auto;
+}
+
+/* General Table Styling */
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow-y: auto;
+    height: 400px;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.table-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: none;
+}
+
+td {
+    font-size: 13px;
+}
+
+th {
+    background-color: #3EB489;
+    color: white;
+    font-size: 13px;
+    position: sticky; /* Keep the header fixed */
+    top: 0; /* Stick the header to the top */
+    z-index: 1; /* Ensure header is on top of table rows */
+}
+
+/* Row Alternating Colors */
+tr.even {
+    background-color: #f9f9f9;
+}
+
+tr.odd {
+    background-color: #ffffff;
+    color: #3EB489;
+}
+
+
+
+/* Adjust the width of the Edit and Delete buttons column */
+th:nth-child(14), td:nth-child(14) { width: 10%; }
+
+/* Button Styling */
+button {
+    background-color: #36454F;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #03da8b;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.home-bttn {
+    font-size: 15px;
+}
+
+.home-bttn:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    background-color: #3EB489;
+    border-radius: 10px;
+}
+
+/* Styles for the alert box */
+.alert-box {
+    display: none; 
+    width: auto;
+    padding: 10px;
+    background-color: #3EB489;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+p{
+    margin: 5%;
+    opacity: 75%;
+}
+
+.aa{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+h3{
+    margin-top: 3%;
+    opacity: 75%;
+}
+
+/* Footer styling */
+.footer {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+    margin-top: 20%;
+}
+
+.aa {
+    text-align: center;
+    font-style: normal;
+}
+
+.title{
+    font-size: 9px;
+    font-style: italic;
+}
+
+.footer-column img {
+    width: 30px;
+    opacity: 75%;
+    height: auto;
+}
+
+.footer-column p {
+    width: 200px;
+    margin: 0;  
+    padding: 0; 
+}
+
+.name{
+    font-size: 11px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+hr {
+    border: none;             
+    height: 1px;              
+    background-color: #36454F;   
+    margin: 20px 0;   
+    width: 100%;        
+}
+
+
+
+
+@media (max-width: 414px) {
+    .banner {
+        height: 250px;
+    }
+    
+    .banner-text {
+        font-size: 3.5em;
+        color: #ffffff;
+        margin: 10px;
+        font-family: "Playfair Display", serif;
+    }
+    
+    .search {
+        padding: 0;
+        margin-top: 40px;
+    }
+    
+    .search input[type="text"] {
+        width: 80%;
+        padding: 15px;
+        font-size: 9px;
+    }
+
+    .search input::placeholder {
+        color: #888; 
+        font-size: 11.5px; 
+    }
+    
+    .search button {
+        padding: 15px 15px;
+    }
+
+    .head-txt{
+        font-size: 1.2rem;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .firsttab {
+        grid-template-columns: 2fr 2fr; 
+        gap: 5px;
+        grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer";
+    }
+
+
+
+    .tablinks{
+        border-radius: 0;
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 9px;
+    }
+
+    .headings h3{
+        font-size: 15px;
+    }
+
+    .ans{
+        font-size: 12px;
+    }
+
+    .tab button.active {
+        border-right: none;
+      }
+
+      .tab button.active {
+        border-bottom: 5px solid #3EB489;
+      }
+
+    .output {
+        display: flex;
+        justify-content: left; 
+        align-items:first baseline;
+        margin: 1%;
+        
+    }
+    .tabcontent {
+        float: left;
+        margin: 2%;
+        border: none;
+        width: 100%;
+        height: 370px; 
+    }
+
+    .abs {
+        float: left;
+        margin: 2%;
+        border: none;
+        width: 100%;
+        height: 300px; /* Adjust height as needed */
+        overflow-y: auto; /* Enables vertical scrolling */
+        padding: 10px; /* Optional: Add padding for better content layout */
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    table td{
+        font-size: 10px;
+        overflow-y: auto;
+    }
+
+    table th{
+        font-size: 9px;
+        overflow-y: auto;
+    }
+
+    table td:nth-child(4), table th:nth-child(4) {
+        display: none;
+    }
+
+    .table-container {
+        width: 100%;
+        max-height: 370px;
+        overflow-y: auto;
+    }
+
+    button{
+        font-size: 10px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    p{
+        margin: 5%;
+        opacity: 75%;
+        font-size: 12px;
+    }
+    
+    .aa{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+    
+    h3{
+        margin-top: 5%;
+        opacity: 75%;
+    }
+    
+    /* Footer styling */
+    .footer {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+    }
+    
+    .footer-container {
+        display: flex;
+        grid-template-columns: repeat(2, 5fr);
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom:10%;
+        margin-top: 70%;
+    }
+    
+    .title{
+        font-size: 9px;
+        font-style: normal;
+    }
+
+    
+    .footer-column img {
+        width: 30px;
+    opacity: 75%;
+    height: auto;
+    }
+    
+    .footer-column p {
+        width: auto;
+        margin: 0;  
+        padding: 0; 
+    }
+    
+    .name{
+        font-size: 9px;
+    }
+    
+    
+    hr {
+        border: none;             
+        height: 1px;              
+        background-color: #36454F;      
+        width: auto;        
+    }
+
+}
+
