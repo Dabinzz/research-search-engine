@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 3%;
+    background-color: white;
+}
+h1 {
+    text-align: center;
+}
+
+.add{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 10px;
+}
+
+label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 3px;
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+input::placeholder {
+    color: #2c3e50;
+    font-size: 14px;
+    opacity: 1; 
+}
+
+input:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+form textarea {
+    width: 100%;  /* Adjust width as needed */
+    max-width: 400px; /* Optional: Limits width */
+    height: 172px; /* Set a fixed height */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; 
+    font-family: Arial, sans-serif;
+
+    
+}
+
+form textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    max-width: 410px; /* Adjust as needed */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+    
+    
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.content {
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Ensures inline text elements are centered */
+    height: 100%; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-color: #f4f4f9;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.file{
+    padding: 2%;
+}
+
+/* File Input Styling */
+.file input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Customizing Placeholder for File Input */
+.file input[type="file"]::file-selector-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.file input[type="file"]::file-selector-button:hover {
+    background-color: rgb(1, 71, 146);
+}
+
+/* Button Styling */
+.file button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;   
+}
+
+.content button{
+    margin-bottom: 3%;
+    padding: 10px 15px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;  
+}
+
+/* Button Hover Effect */
+.file button:hover, form button:hover {
+    background-color: #15967c;
+}
+
+
+
+
