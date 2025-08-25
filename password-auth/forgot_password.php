@@ -46,12 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'in-v3.mailjet.com';  // Use your mail server (e.g., Mailjet SMTP)
             $mail->SMTPAuth = true;
-            $mail->Username = '4d4793aa9670d8abbb5a05391c416da7';
-            $mail->Password = '840e3536a2a3fb67d81ad575df9a11d7';
+            $mail->Username = '';
+            $mail->Password = '';
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom('hassanalshino89@gmail.com', 'BERF Verification Tool');
+            $mail->setFrom('', '');
             $mail->addAddress($email);
             $mail->Subject = 'BVT Account Password Reset';
             $mail->Body = "Your OTP code is: $otp";
@@ -291,3 +291,4 @@ label[for="show_password"] {
 
     </body>
     </html>
+
