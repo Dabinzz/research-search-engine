@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->Host = 'in-v3.mailjet.com';  // Use your mail server (e.g., Mailjet SMTP)
+            $mail->Host = '';  
             $mail->SMTPAuth = true;
             $mail->Username = '';
             $mail->Password = '';
@@ -291,5 +291,6 @@ label[for="show_password"] {
 
     </body>
     </html>
+
 
 
